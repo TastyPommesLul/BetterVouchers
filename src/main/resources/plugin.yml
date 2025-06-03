@@ -1,0 +1,8 @@
+name: BetterVouchers
+version: '0.0.1'
+main: net.tastypommeslul.betterVouchers.BetterVouchers
+api-version: '1.21'
+prefix: BetterVouchers
+load: STARTUP
+authors: [ TastyPommesLul ]
+description: Better Vouchers
