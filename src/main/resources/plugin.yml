@@ -6,3 +6,15 @@ prefix: BetterVouchers
 load: STARTUP
 authors: [ TastyPommesLul ]
 description: Better Vouchers
+
+commands:
+  vouchers:
+    description: Yes
+    usage: /vouchers
+
+  setapplicable:
+    description: Sets the item to be applicable for Better Vouchers
+    usage: /setapplicable <true:false>
+
+depends:
+  - CrazyEnchants

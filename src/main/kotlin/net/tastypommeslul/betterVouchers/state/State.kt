@@ -1,7 +1,7 @@
 package net.tastypommeslul.betterVouchers.state
 
-import net.tastypommeslul.betterVouchers.items.BingVoucher
-import net.tastypommeslul.betterVouchers.items.TestVoucher
+import net.tastypommeslul.betterVouchers.items.vouchers.BingVoucher
+import net.tastypommeslul.betterVouchers.items.vouchers.TestVoucher
 import org.bukkit.inventory.ItemStack
 
 object State {

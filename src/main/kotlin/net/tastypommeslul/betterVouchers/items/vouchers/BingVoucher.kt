@@ -1,22 +1,20 @@
-package net.tastypommeslul.betterVouchers.items
+package net.tastypommeslul.betterVouchers.items.vouchers
 
 import io.papermc.paper.datacomponent.DataComponentTypes
-import net.kyori.adventure.text.Component.text
-import net.tastypommeslul.betterVouchers.BetterVouchers
+import net.kyori.adventure.text.Component.*
+import net.tastypommeslul.betterVouchers.items.vouchers.utils.Voucher
+import net.tastypommeslul.betterVouchers.items.vouchers.utils.VoucherLevel
 import org.bukkit.Material
 import org.bukkit.inventory.ItemStack
-import org.bukkit.plugin.java.JavaPlugin
-import kotlin.jvm.java
 
-object BingVoucher : BasicVoucher {
-  override val plugin: JavaPlugin = JavaPlugin.getPlugin(BetterVouchers::class.java)
+object BingVoucher : Voucher() {
   override val item: ItemStack = ItemStack(Material.AMETHYST_SHARD, 1)
   override val voucherLevel: VoucherLevel = VoucherLevel.ULTIMATE
 
   override fun register(): ItemStack {
     item.lore(listOf(
       text("Bing voucher"),
-      text("Increases Wanted Enchant by ${VoucherLevel.getLvl(voucherLevel)}"),
+      text("Increases Wanted Enchant by ${voucherLevel.getLvl()}"),
     ))
 
     item.setData(DataComponentTypes.CUSTOM_NAME) {
